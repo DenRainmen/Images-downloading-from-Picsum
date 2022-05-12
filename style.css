@@ -1,0 +1,42 @@
+html{
+    /*создаем CSS переменную*/
+    --baseUrl: url('https://picsum.photos/id/1025/1000/2000');
+    
+    /*применяем CSS переменную*/
+    background-image: var(--baseUrl);
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-clip: border-box;
+    
+    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: url("./img/cursorActive.cur"), wait;
+}
+
+
+button{
+    padding: 10px 30px;
+    background: transparent;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition-duration: 2.2s;
+}
+
+button:hover{
+    font-size: 1.3em;
+    background: linear-gradient(dodgerblue, springgreen);
+    text-decoration: underline wavy dodgerblue;
+   /*  cursor: wait;  */
+    cursor: url("./img/handcursor.cur"), wait;
+}
+
